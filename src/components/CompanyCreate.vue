@@ -58,7 +58,6 @@ export default {
     },
     create () {
       let newCompany = window.companies.add(this.name, this.motto)
-      this.$refs.modal.close()
       this.$emit('created', newCompany.id)
     }
   }
